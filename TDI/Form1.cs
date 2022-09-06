@@ -16,6 +16,7 @@ namespace TDI
         public Form1()
         {
             InitializeComponent();
+            Text = "STOP";
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
