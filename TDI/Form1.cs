@@ -22,12 +22,14 @@ namespace TDI
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
+            Font verdanaFont = new Font("Verdana", 60, FontStyle.Bold);
             Pen pn = new Pen(Brushes.White, 50);             
             pn.DashStyle = DashStyle.Solid; 
             g.DrawEllipse(pn, 100, 100, 500, 500);
             g.FillEllipse(Brushes.Red, 100,100,500,500);
             Rectangle rect = new Rectangle(200, 300, 300, 90);
             g.FillRectangle(Brushes.White, rect);
+            g.DrawString("STOP", verdanaFont, Brushes.DarkOrange, 10, 10);
         }
     }
 }
